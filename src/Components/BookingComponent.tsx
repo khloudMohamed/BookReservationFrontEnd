@@ -65,12 +65,12 @@ export default function BookingComponent (props:BookingProp){
             <Modal.Body>
             <Container>
             <Row>
-                <Col xs={6} md={4}>
+                <Col xs={6} md={3}>
                 Date From
                 </Col>
                 <Col>
                     <Row>
-                        <Col>
+                        <Col xs={6} md={6}>
                             <Form.Control type="Date" placeholder="DateFrom" value={DateFrom} onChange={(date) => ChangeDateFrom(date)} />
                         </Col>
                         <Col>
@@ -80,12 +80,12 @@ export default function BookingComponent (props:BookingProp){
                 </Col>
             </Row>
             <Row>
-                <Col xs={6} md={4}>
+                <Col xs={6} md={3}>
                 Data To
                 </Col>
                 <Col>
                     <Row>
-                    <Col >
+                    <Col xs={6} md={6}>
                         <Form.Control type="Date" placeholder="DateTo" value= {DateTo} onChange ={(date) => ChangeDateTo(date)} />
                     </Col>
                     <Col >
@@ -95,7 +95,7 @@ export default function BookingComponent (props:BookingProp){
                 </Col>
             </Row>
             <Row>
-                <Col xs={6} md={4}>
+                <Col xs={6} md={3}>
                 Quantity
                 </Col>
                 <Col xs={6} md={4}>
