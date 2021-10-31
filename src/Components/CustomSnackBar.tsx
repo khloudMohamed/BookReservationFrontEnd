@@ -1,3 +1,4 @@
+import { Alert } from "@mui/material";
 import Snackbar from "@mui/material/Snackbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Msg } from "../Models/MessageModel";
@@ -8,23 +9,18 @@ type Props = {
 
 const CustomSnackBar = ({Msg}:Props) => {
     return (
-        <Snackbar
+         <Snackbar
           open={Msg?.show}
           autoHideDuration={3000}
           >
-            <div>{Msg.msg}</div>
+          <Alert 
+            severity = {Msg.type}
+            sx={{ width: '100%' }}>
+             {Msg.msg}   
+          </Alert>
         </Snackbar>
     );
 };
 
-const Alert = (props: any) => {
-    return (
-        <Alert 
-            elevation={6} 
-            variant="filled" 
-            {...props} 
-        />
-    );
-};
 
 export default CustomSnackBar;
