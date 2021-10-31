@@ -8,8 +8,6 @@ import Form from "react-bootstrap/Form";
 import {Booking, BookingProp} from '../Models/Booking';
 import {Msg} from '../Models/MessageModel';
 import CustomSnackBar from './CustomSnackBar';
-// import DatePicker from 'react-datepicker';
-import "react-datepicker/dist/react-datepicker.css";
 import { bookSelectedRecource } from '../Services/HttpService';
 
 export default function BookingComponent (props:BookingProp){
